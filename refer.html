@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- BEGIN: Head -->
+
+
+
+<head>
+    <meta charset="utf-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Next Generation Staking Platform">
+    <meta name="keywords" content="CSE, crypto, bitcoin, ethereum, staking, CSE token">
+    <meta name="author" content="LEFT4CODE">
+    <title>CSE - Referrral</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="css/panels.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/kit.fontawesome.com/35a8a9b155.js" crossorigin="anonymous"></script>
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+
+	<!--BEGIN HEADER-->
+    <div class="shared-header" style="height: 86px;"></div>
+
+
+    <div class="alert-holder">
+        <div class="alert-tb rounded-md flex items-center px-5 py-4 mb-2 bg-theme-18 text-theme-9"
+            style="display:none; position: fixed;width: fit-content; right: 10px;top: 9px;z-index: 10000;opacity: 0.96; padding-left: 30px; padding-right: 30px;">
+            <i data-feather="alert-circle" class="w-6 h-6 mr-2" style="display: inline-block;"></i><span
+                class="alert-inner" style="display: inline-block;"></span>
+        </div>
+
+        <div class="alert-tb rounded-md flex items-center px-5 py-4 mb-2 bg-theme-17 text-theme-11"
+            style="display:none; position: fixed;width: fit-content; right: 10px;top: 9px;z-index: 10000;opacity: 0.96; padding-left: 30px; padding-right: 30px;">
+            <i data-feather="alert-circle" class="w-6 h-6 mr-2" style="display: inline-block;"></i><span
+                class="alert-inner" style="display: inline-block;"></span>
+        </div>
+
+        <div class="alert-tb rounded-md flex items-center px-5 py-4 mb-2 bg-theme-31 text-theme-6"
+            style="display:none; position: fixed;width: fit-content; right: 10px;top: 9px;z-index: 10000;opacity: 0.96; padding-left: 30px; padding-right: 30px;">
+            <i data-feather="alert-circle" class="w-6 h-6 mr-2" style="display: inline-block;"></i><span
+                class="alert-inner" style="display: inline-block;"></span>
+        </div>
+    </div>
+	<!--END HEADER-->	
+
+    <!-- BEGIN: Top Menu -->
+	<style type="text/css">
+		nav{
+			margin: 0 auto;
+			display: table;
+		}
+	</style>
+    <nav class="top-nav" >
+        <ul>
+            <li>
+                <a href="https://csebnb.github.io" onclick="location.href=this.href+'?ref='+accessCookie('ref');return false;" class="top-menu">
+                    <div class="top-menu__icon"> <i style="color: f23737;" data-feather="server"></i> </div>
+                    <div class="top-menu__title"> Auction </div>
+                </a>
+            </li>
+            <li>
+                <a href="stake.html" onclick="location.href=this.href+'?ref='+accessCookie('ref');return false;" class="top-menu">
+                    <div class="top-menu__icon"> <i style="color: f23737;" data-feather="layers"></i> </div>
+                    <div class="top-menu__title"> Stake </div>
+                </a>
+            </li>
+            <li>
+                <a href="refer.html" onclick="location.href=this.href+'?ref='+accessCookie('ref');return false;" class="top-menu top-menu--active">
+                    <div class="top-menu__icon"> <i style="color: f23737;" data-feather="users"></i> </div>
+                    <div class="top-menu__title"> Referrals</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END: Top Menu -->
+    <!-- BEGIN: Content -->
+    <div class="content" style="background: #000001;box-shadow: 0px 0px 14px #1414198a;">
+
+        <div class="grid grid-cols-12 gap-6">
+
+            <div class="col-span-12 lg:col-span-12 flex lg:block flex-col-reverse"
+            style="padding-top: 20px;">
+            <div class="intro-y inbox box mt-5" style="margin-top: 0px; background: #2e2e49;">
+
+                    <div class="box-body col-span-12 lg:col-span-5 box"
+                        style="background: #595959; border-radius: 9px;box-shadow: 0px 0px 18px #2a230b;">
+				
+                        <div class="box-header flex items-center p-5 border-b border-gray-200"
+                            style="padding-top: 7px;padding-bottom: 7px;padding-right: 8px;">
+						
+                        <h2 class="font-medium text-base mr-auto" style="text-align: center;margin: 0px auto;color: #f23737; font-size: 22px; font-weight: 900;">
+                            Your Referral Link
+                        </h2>
+
+                    </div>
+                    <div class="p-5" style="padding: 0;">
+                        <div class="csne-gray-background" style="padding-top: 10px;">
+                           							
+							<h2 class="font-medium text-base mr-auto"
+								style="color: #111; font-weight: 900; text-align: center;margin: 0px auto;font-size: 18px; text-shadow: 0px 0px 5px #969cb81f;">
+								Your referrals will earn an extra 10% minted CSE tokens on their auction collection. <br>
+								As a referrer you will earn an extra 10%. There are no limits on number on the amount of referrals that you can get.
+							</h2>
+							
+                            <div class="border-t border-gray-200 p-5" style="padding-left: 3%;padding-right: 3%; border: 0px; text-align: center;
+                            padding-bottom: 40px;">
+
+                                <input readonly value="--" type="text" class="ref-link input border flex-1"
+                                    style="width: 55%;display: inline-block;vertical-align: top; font-weight: 900;
+                                        color: #f23737; height: 40px; background-color: #232323; border: 3px solid #3a3e50;">
+
+                                <a onclick="copyLinkToClipboard()" data-event="on-click" href="javascript:;" title="Copied!"
+                                    class="button w-24 inline-block mr-1 mb-2 bg-gray-200 text-gray-600 tooltip button inline-block tooltipstered"
+                                    style="color: #0000009e;margin: 0;margin-left: 3px;height: 40px;background-image: linear-gradient(45deg, #f23737 0%, #f23737 100%);
+                                    box-shadow: 0 3px 6px rgba(0, 0, 0, .3), inset 0 0 10px 3px rgba(0, 0, 0, .2), 0 3px 20px #f23737, 0 3px 35px rgba(103, 174, 74, 0.28);">Copy Link
+                                </a>
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+				
+		<!--Contact Info-->	
+		<footer>	
+		</footer>
+		<!--End Contact Info-->
+    </div>
+
+				
+				
+				
+    <!-- END: Content -->
+    <!-- BEGIN: JS Assets-->
+	<script src="js/ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="shared/header.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/refer.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+
+    <!-- END: JS Assets-->
+</body>
+
+
+
+</html>
