@@ -57,6 +57,7 @@ window.addEventListener('load', function () {
     // Load WEB3
     if (typeof web3 !== 'undefined') {
         web3 = new Web3(window.ethereum);
+        window.ethereum.enable();
         console.log("conn")
         // Or connect to a node
     } else {
