@@ -472,7 +472,7 @@ function getMyEndedStakes() {
 	
 	mainContract.getPastEvents('StakeEnd', {
 		filter: {stakerAddr: user.address},
-		fromBlock: 0,
+		fromBlock: 5744530,
 		toBlock: 'latest'
 	}).then(events =>{
 		while(i < events.length){
