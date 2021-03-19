@@ -161,8 +161,9 @@ function getJackpotBalance() {
         shouldPollResponse: true
     }).then(res => {
             var balance = parseInt(res) / 1000000000000000000;
+            var balanceTrunc = Math.trunc(balance);
              console.log(balance+" "+"BNB");
-             $('.jpb')[0].innerHTML = balance + " " + "BNB";
+             $('.jpb')[0].innerHTML = abbreviate_number(balance, 4) + " BNB"
            });
 }
 
