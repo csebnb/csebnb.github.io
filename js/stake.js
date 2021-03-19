@@ -134,9 +134,9 @@ function calculator() {
 }
 
 setInterval(() => {
-	if(parseInt($('.stake-inp-day')[0].value) > 365){
-		$('.stake-inp-day')[0].value = 365
-        alert("Max Stake Days: 365")
+	if(parseInt($('.stake-inp-day')[0].value) > 60){
+		$('.stake-inp-day')[0].value = 60
+        alert("Max Stake Days: 60")
         stakeChangeDays();
 		return
 	}
