@@ -13,7 +13,7 @@ const SUN = 1000000
 const zeroAddress = "0x0000000000000000000000000000000000000000"
 var mainContract, currentDay
 var contractAddress = "0xe176468C70A821e30bC39D49Ef3077c91d891B62"
-var telegram = "https://t.me/csexperiment"
+var telegram = "https://t.me/communitystakingexperiment"
 var twitter = "https://twitter.com/CseTron"
 var trcwebsite = "https://csetron.com/"
 var ercwebsite = "https://csebnb.github.io/"
@@ -29,7 +29,7 @@ $('.telemenu')[0].innerHTML = '<a href="'+telegram+'" target="_blank" class="men
 
 var csnLogo = '<div class="flex items-center justify-center""><a href="http://csebnb.github.io"><img src="./img/cseb.png" style="display: inline-block;width: 300px; height: 200px;"></div></a>';
 var socialMediaSites = '<div class="flex items-center justify-center" style="border: 0;padding: 12px;">' +
-'<div class="contact-info social-media"><a href="https://t.me/csexperiment"target="blank" class="fa fa-telegram" style="font-size:25px; color: #f23737; margin-right: 0px;"></a></div>' 
+'<div class="contact-info social-media"><a href="https://t.me/communitystakingexperiment"target="blank" class="fa fa-telegram" style="font-size:25px; color: #f23737; margin-right: 0px;"></a></div>' 
  +
 '<div class="contact-info social-media" style="margin-left: 10px;"><a href="https://twitter.com/CseTron" target="blank" class="fa fa-twitter" style="font-size:25px; color: #f23737; margin-right: 0px;"></a></div></div>';
 
